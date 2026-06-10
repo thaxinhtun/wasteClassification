@@ -323,7 +323,7 @@ def prediction_page():
                 image_source = Image.open(camera_file).convert("RGB")
 
         if image_source:
-            st.image(image_source, caption="Selected Waste Sample", use_container_width=True)
+            st.image(image_source, caption="Selected Waste Sample", use_container_width=False)
             predict_clicked = st.button("Predict Waste Category", use_container_width=False, type="primary")
             
             if predict_clicked:
