@@ -324,7 +324,7 @@ def prediction_page():
 
         if image_source:
             st.image(image_source, caption="Selected Waste Sample", use_container_width=True)
-            predict_clicked = st.button("Predict Waste Category", use_container_width=True, type="primary")
+            predict_clicked = st.button("Predict Waste Category", use_container_width=False, type="primary")
             
             if predict_clicked:
                 with st.spinner("Analyzing image patterns and extracting features..."):
