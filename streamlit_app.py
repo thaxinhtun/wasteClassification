@@ -122,15 +122,15 @@ st.markdown("""
 # -------------------------------
 @st.cache_resource
 def load_resnet():
-    return tf.keras.models.load_model("resnet50_waste_classifier_v2.keras")
+    return tf.keras.models.load_model("resnet50_waste_classifier_v3.keras")
 
 @st.cache_resource
 def load_efficientnet():
-    return tf.keras.models.load_model("efficientnet_waste_classifier_v4.keras")
+    return tf.keras.models.load_model("efficientnet_waste_classifier_v5.keras")
 
 @st.cache_resource
 def load_mobilenet():
-    return tf.keras.models.load_model("mobilenet_waste_classifier_v2.keras")
+    return tf.keras.models.load_model("mobilenet_waste_classifier_v4.keras")
 
 # -------------------------------
 # DATA CONFIG & MAPPING
@@ -166,7 +166,7 @@ def home_page():
     # ---------------------------------------------------------
     # MAIN TITLE & BANNER
     # ---------------------------------------------------------
-    st.markdown('<p class="main-title" style="text-align: center;">♻️ Waste Classification With Computer Vision</p>', unsafe_allow_html=True)
+    st.markdown('<p class="main-title" style="text-align: center;">♻️ Waste Classification</p>', unsafe_allow_html=True)
     
     col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
