@@ -19,10 +19,10 @@ The dataset includes images of household waste separated into classes such as pa
 ## Project Includes
 
 - `streamlit_app.py` - Main Streamlit application for inference.
-- `resnet50_waste_classifier_v2.keras` - ResNet50 waste classifier.
-- `efficientnet_waste_classifier_v3.keras` - EfficientNet-B0 waste classifier.
-- `mobilenet_waste_classifier_v2.keras` - MobileNetV2 waste classifier.
-- `test_images/` - Example images for testing.
+- `models/resnet50_waste_classifier_v3.keras` - ResNet50 waste classifier.
+- `models/efficientnet_waste_classifier_v5.keras` - EfficientNet-B0 waste classifier.
+- `models/mobilenet_waste_classifier_v4.keras` - MobileNetV2 waste classifier.
+- `assets/test_images/` - Example images for testing.
 - `train_cnn.ipynb` - Notebook for training a custom CNN model.
 - `train_mobileNet.ipynb` - Notebook for training and evaluating MobileNetV2.
 - `train_effecientNet.ipynb` - Notebook for training and evaluating EfficientNet.
@@ -61,7 +61,7 @@ streamlit run streamlit_app.py
 
 ## Notes
 
-- The app loads pre-trained `.keras` model files from the project root.
+- The app loads pre-trained `.keras` model files from `models/`.
 - The project uses these waste categories: `battery`, `biological`, `cardboard`, `clothes`, `glass`, `metal`, `paper`, `plastic`, `shoes`, and `trash`.
 - If prediction results are inconsistent, make sure preprocessing in the app matches the training preprocessing.
 

@@ -122,15 +122,15 @@ st.markdown("""
 # -------------------------------
 @st.cache_resource
 def load_resnet():
-    return tf.keras.models.load_model("resnet50_waste_classifier_v3.keras")
+    return tf.keras.models.load_model("models/resnet50_waste_classifier_v3.keras")
 
 @st.cache_resource
 def load_efficientnet():
-    return tf.keras.models.load_model("efficientnet_waste_classifier_v5.keras")
+    return tf.keras.models.load_model("models/efficientnet_waste_classifier_v5.keras")
 
 @st.cache_resource
 def load_mobilenet():
-    return tf.keras.models.load_model("mobilenet_waste_classifier_v4.keras")
+    return tf.keras.models.load_model("models/mobilenet_waste_classifier_v4.keras")
 
 # -------------------------------
 # DATA CONFIG & MAPPING
